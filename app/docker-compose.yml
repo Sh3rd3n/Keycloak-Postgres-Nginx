@@ -3,7 +3,7 @@ version: '3.8'
 services:
   keycloak:
     image: quay.io/keycloak/keycloak:24.0.2
-    command: start-dev
+    command: start
     environment:
       KC_DB: postgres
       KC_DB_URL_HOST: postgres
@@ -14,8 +14,8 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
       KC_PROXY: edge
-      KC_HOSTNAME_ADMIN_URL: https://localhost:8443
-      KC_HOSTNAME_URL: https://localhost:8443
+      KC_HOSTNAME_ADMIN_URL: https://10.244.0.95:8443
+      KC_HOSTNAME_URL: https://10.244.0.95:8443
     ports:
       - "8090:8080"
     depends_on:
