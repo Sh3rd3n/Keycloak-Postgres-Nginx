@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/keycloak-postgres-nginx.iml" filepath="$PROJECT_DIR$/keycloak-postgres-nginx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Keycloak-Postgres-Nginx.iml" filepath="$PROJECT_DIR$/.idea/Keycloak-Postgres-Nginx.iml" />
     </modules>
   </component>
 </project>
