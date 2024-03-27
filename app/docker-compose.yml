@@ -6,7 +6,7 @@ services:
     command: start-dev
     environment:
       KC_DB: postgres
-      KC_DB_URL_HOST: postgres_keycloak
+      KC_DB_URL_HOST: postgres
       KC_DB_URL_DATABASE: keycloak
       KC_DB_PASSWORD: password
       KC_DB_USERNAME: keycloak
@@ -16,9 +16,8 @@ services:
       KC_PROXY: edge
       KC_HOSTNAME_ADMIN_URL: https://localhost:8443
       KC_HOSTNAME_URL: https://localhost:8443
-
     ports:
-      - "8080:8080"
+      - "8090:8080"
     depends_on:
       postgres:
         condition: service_healthy
